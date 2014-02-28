@@ -28,7 +28,7 @@ class BaseFirmware(object):
         self.doge = 0
         self.position = [0, 0]
         self.speed = 0
-        self.shields = 100
+        self.shield = 100
 
         # Don't blow your engine! This is unbounded, so it can go over 9000.
         self.engineTemperature = 0
@@ -36,17 +36,13 @@ class BaseFirmware(object):
         # Unused power
         self.power = 0
 
-        self.shields_level = 1
         self.shield_recharge = 1
 
-        self.weapons_level = 1
         self.weapon_power = 10
         self.weapon_range = 50
 
-        self.armor_level = 1
-        self.armor = 100
+        self.health = 100
 
-        self.thrusters_level = 1
         self.thrusters = 10
 
         # Represents what happens in the game, e.g. getting hit or shooting
